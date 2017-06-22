@@ -1,0 +1,25 @@
+{
+  "name": "react-native-device-settings",
+  "version": "1.0.0",
+  "description": "simple platform agnostic API to open device settings menus in react native",
+  "main": "DeviceSettings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "settings",
+    "device",
+    "api"
+  ],
+  "author": "Ricardo Lopes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjblopes/react-native-device-settings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rjblopes/react-native-device-settings/issues"
+  },
+  "homepage": "https://github.com/rjblopes/react-native-device-settings#readme"
+}
