@@ -32,4 +32,14 @@ function wifi(){
   }
 }
 
-module.exports = { open , app, wifi };
+function location(){
+  try{
+    if (Platform.OS !== 'ios') {
+      RNOpenSettings.locationSettings();
+    }
+  }catch(err){
+    console.error(err);
+  }
+}
+
+module.exports = { open , app, wifi, location };
