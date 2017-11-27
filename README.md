@@ -6,7 +6,7 @@ React Native simple platform agnostic API to open up device settings menus
 ```
 npm install react-native-device-settings --save
 
-[for Bluetooth settings support]
+// for Bluetooth settings support, while not merged to rjblopes' master
 npm install https://github.com/cheehieu/react-native-device-settings --save
 ```
 
@@ -16,7 +16,7 @@ react-native link react-native-device-settings
 ```
 ### Manual Install
 
-### `iOS`
+### iOS
 
 -NA: using Linking RN library. URLs applicable for IOS 10.
 
