@@ -61,6 +61,10 @@ DeviceSettings.app();
 
 // Open wifi settings menu
 DeviceSettings.wifi();
+
+// Open Bluetooth settings menu
+DeviceSettings.bluetooth();
+
 ```
 
 

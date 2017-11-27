@@ -32,4 +32,14 @@ function wifi(){
   }
 }
 
-module.exports = { open , app, wifi };
+function bluetooth(){
+  try{
+    (Platform.OS === 'ios') ?
+      Linking.openURL('App-prefs:root=Bluetooth') :
+      RNOpenSettings.bluetoothSettings();
+  }catch(err){
+    console.error(err);
+  }
+}
+
+module.exports = { open , app, wifi, bluetooth };
