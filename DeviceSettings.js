@@ -42,4 +42,14 @@ function location(){
   }
 }
 
-module.exports = { open , app, wifi, location };
+function bluetooth(){
+  try{
+    (Platform.OS === 'ios') ?
+      Linking.openURL('App-prefs:root=Bluetooth') :
+      RNOpenSettings.bluetoothSettings();
+  }catch(err){
+    console.error(err);
+  }
+}
+
+module.exports = { open , app, wifi, location, bluetooth };

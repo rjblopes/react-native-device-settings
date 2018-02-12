@@ -13,7 +13,7 @@ react-native link react-native-device-settings
 ```
 ### Manual Install
 
-### `iOS`
+### iOS
 
 -NA: using Linking RN library. URLs applicable for IOS 10.
 
@@ -61,6 +61,13 @@ DeviceSettings.app();
 
 // Open wifi settings menu
 DeviceSettings.wifi();
+
+// Open location settings menu [Android only]
+DeviceSettings.location();
+
+// Open Bluetooth settings menu
+DeviceSettings.bluetooth();
+
 ```
 
 
