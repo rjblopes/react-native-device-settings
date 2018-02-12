@@ -57,6 +57,16 @@ public class OpenSettings extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void locationSettings() {
+        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        if (intent.resolveActivity(reactContext.getPackageManager()) != null) {
+            reactContext.startActivity(intent);
+        }
+    }
+
+    @ReactMethod
     public void bluetoothSettings() {
         Intent intent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

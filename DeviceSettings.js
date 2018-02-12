@@ -32,6 +32,16 @@ function wifi(){
   }
 }
 
+function location(){
+  try{
+    if (Platform.OS !== 'ios') {
+      RNOpenSettings.locationSettings();
+    }
+  }catch(err){
+    console.error(err);
+  }
+}
+
 function bluetooth(){
   try{
     (Platform.OS === 'ios') ?
@@ -42,4 +52,4 @@ function bluetooth(){
   }
 }
 
-module.exports = { open , app, wifi, bluetooth };
+module.exports = { open , app, wifi, location, bluetooth };
