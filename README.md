@@ -61,6 +61,9 @@ DeviceSettings.app();
 
 // Open wifi settings menu
 DeviceSettings.wifi();
+
+// Open location settings menu
+DeviceSettings.location();
 ```
 
 
