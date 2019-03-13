@@ -46,7 +46,22 @@ react-native link react-native-device-settings
     import com.rjblopes.opensettings.OpenSettingsPackage; // <-- add this import
     ...
     ```
+3. Edit `MainApplication.java` to look like this
 
+    ```
+    ...
+
+    import com.rjblopes.opensettings.OpenSettingsPackage; // <-- add this import
+    ...
+    
+    @Override
+        protected List<ReactPackage> getPackages() {
+            return Arrays.<ReactPackage>asList(
+            ...
+            new OpenSettingsPackage()
+        );
+    
+    ```
 ## Usage
 
 ```javascript
