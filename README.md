@@ -51,16 +51,16 @@ react-native link react-native-device-settings
     ```
     ...
 
-    import com.rjblopes.opensettings.OpenSettingsPackage; // <-- add this import
+    import com.rjblopes.opensettings.OpenSettingsPackage;
     ...
     
     @Override
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
-            ...
-            new OpenSettingsPackage()
-        );
-    
+                ...
+                new OpenSettingsPackage()
+            );
+        }
     ```
 ## Usage
 
